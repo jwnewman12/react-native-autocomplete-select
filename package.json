@@ -1,6 +1,6 @@
 {
   "name": "react-native-autocomplete-select",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AutoComplete with selection for react-native",
   "main": "index.js",
   "repository": {
@@ -20,20 +20,24 @@
   "author": "Thiago Porto",
   "license": "MIT",
   "dependencies": {
-    "react": ">=15.4.1",
-    "react-native": ">=0.38.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-native": "~0.57.4",
     "string_score": "git+https://github.com/ThiagoNP/string_score.git"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "babel-preset-react-native": "^1.9.1",
-    "enzyme": "^2.7.1",
-    "husky": "^0.13.1",
-    "jest": "^18.1.0",
-    "react-addons-test-utils": ">=15.4.1",
-    "react-dom": ">=15.4.1",
-    "snazzy": "^6.0.0",
-    "standard": "^8.6.0"
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "eslint": "^5.6.1",
+    "eslint-plugin-react": "^7.11.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "husky": "^1.1.2",
+    "jest": "^23.6.0",
+    "jest-react-native": "^18.0.0",
+    "react-test-renderer": "^16.6.0",
+    "snazzy": "^8.0.0",
+    "standard": "^12.0.1"
   },
   "jest": {
     "collectCoverage": true,
@@ -44,7 +48,7 @@
     "coverageDirectory": "./coverage",
     "preset": "react-native",
     "transformIgnorePatterns": [
-      "node_modules/(?!react-native)"
+      "node_modules/(?!(jest-)?react-native)"
     ]
   },
   "standard": {
